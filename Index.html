@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>C.N.A - Sistema Interno</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a1a2f;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: #0d2b52;
+    padding: 20px;
+    border-bottom: 2px solid #1e90ff;
+}
+
+h1 {
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.container {
+    padding: 30px;
+}
+
+.box {
+    background: #122b4a;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border: 1px solid #1e90ff;
+    border-radius: 10px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #1e90ff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #3aa0ff;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Área secreta */
+#arquivo {
+    background: black;
+    color: #00ffcc;
+    font-family: monospace;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.glitch {
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0% {opacity:1;}
+    50% {opacity:0.5;}
+    100% {opacity:1;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>CNA</h1>
+    <p>Companhia Neutralizadora de Anomalias</p>
+</header>
+
+<div class="container">
+
+    <!-- LOGIN -->
+    <div class="box" id="loginBox">
+        <h2>Acesso Restrito</h2>
+        <input type="text" id="user" placeholder="Usuário">
+        <input type="password" id="pass" placeholder="Senha">
+        <br>
+        <button onclick="login()">Entrar</button>
+    </div>
+
+    <!-- PAINEL -->
+    <div class="box hidden" id="painel">
+        <h2>PAINEL INTERNO</h2>
+        <p>Status: <span style="color:lime;">ONLINE</span></p>
+        <p>Último registro: ARQUIVO 213</p>
+        <button onclick="abrirArquivo()">Acessar Arquivo</button>
+    </div>
+
+    <!-- ARQUIVO SECRETO -->
+    <div id="arquivo" class="hidden">
+        <h2 style="color:red;">⚠ ARQUIVO 213 ⚠</h2>
+        <p>Status: CORROMPIDO</p>
+
+        <p class="glitch">
+            "Eu não senti quando começou..."
+        </p>
+
+        <br>
+
+        <p>Registro parcial recuperado:</p>
+
+        <p>
+        O som não vinha da vítima.<br>
+        Nem do suspeito.<br><br>
+        <span style="color:red;">VINHA DA CASA.</span>
+        </p>
+    </div>
+
+</div>
+
+<script>
+function login() {
+    let user = document.getElementById("user").value;
+    let pass = document.getElementById("pass").value;
+
+    if(user === "admin" && pass === "213") {
+        document.getElementById("loginBox").style.display = "none";
+        document.getElementById("painel").style.display = "block";
+    } else {
+        alert("ACESSO NEGADO");
+    }
+}
+
+function abrirArquivo() {
+    document.getElementById("arquivo").style.display = "block";
+}
+</script>
+
+</body>
+                                         </html>
