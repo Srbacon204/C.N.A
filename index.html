@@ -1,113 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>CNA - TEXT SYSTEM</title>
+<meta charset="UTF-8">
+<title>CNA SYSTEM v2</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background-color: #050914;
-      color: #cfe3ff;
-      padding: 20px;
-    }
+<style>
+body{
+  margin:0;
+  font-family: Arial;
+  background:#020611;
+  color:#cfe6ff;
+  overflow-x:hidden;
+}
 
-    h1 {
-      text-align: center;
-      color: #1e90ff;
-      letter-spacing: 3px;
-    }
+/* topo */
+.header{
+  padding:20px;
+  text-align:center;
+  font-size:22px;
+  letter-spacing:4px;
+  color:#1e90ff;
+  border-bottom:1px solid #1e90ff;
+  background:linear-gradient(90deg,#000814,#001a44,#000814);
+}
 
-    .block {
-      margin-bottom: 25px;
-      padding: 10px;
-      border-left: 3px solid #1e90ff;
-    }
+/* layout geral */
+.wrapper{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  padding:20px;
+}
 
-    .title {
-      font-weight: bold;
-      color: #4aa3ff;
-      margin-bottom: 5px;
-    }
+/* blocos */
+.block{
+  background:#06142a;
+  border:1px solid #0d3b7a;
+  padding:12px;
+  box-shadow:0 0 10px #001a66;
+  position:relative;
+}
 
-    .text {
-      color: #d6e6ff;
-      white-space: pre-wrap;
-    }
+.block::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:2px;
+  background:#1e90ff;
+}
 
-    .footer {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #1e90ff;
-      font-size: 14px;
-    }
+.title{
+  color:#4aa3ff;
+  font-weight:bold;
+  margin-bottom:8px;
+  letter-spacing:1px;
+}
 
-    a {
-      color: #1e90ff;
-    }
-  </style>
+.text{
+  color:#d6e6ff;
+  font-size:14px;
+  white-space:pre-wrap;
+}
+
+/* linha inferior estilo sistema */
+.footer{
+  margin:20px;
+  padding:15px;
+  border-top:1px solid #1e90ff;
+  font-size:13px;
+  color:#9cc9ff;
+  text-align:center;
+}
+
+.small{
+  font-size:11px;
+  color:#6fa8ff;
+}
+</style>
 </head>
 
 <body>
 
-<h1>CNA SYSTEM LOG</h1>
+<div class="header">
+CNA SYSTEM // CORE ACCESS NODE
+</div>
+
+<div class="wrapper">
 
 <div class="block">
-  <div class="title">TEST 1</div>
-  <div class="text">Bla balalabalaalalalala</div>
+<div class="title">ANOMALIA 1-Gato de carne</div>
+  <div class="text">Ate onde sabemos, é uma entidade com aparencia similar a um gato, mas da mandibula pra baixo, existe apenas carne, musculos e ossos, tem em media 1,80-2,00, tem uma força sobre humana e tem uma sede de sangue enorme, uma das Características dele é caçar em áreas com maior quantias de roedores e passaros</div>
+</div>
+
+7<div class="block">
+<div class="title">ANOMALIA 2-A Fome</div>
+<div class="text">Uma bactéria similar q raiva que leva o portador a loucura e o destroí de dentro pra fora, alguns estudos indicam que ela tenha sido originada na alemanha, durante a segunda guerra mundial, suponhamos que ela foi parada por um prisioneiro que levou a doença com ele em uma cela após ser esquecido lá.</div>
 </div>
 
 <div class="block">
-  <div class="title">TEST 2</div>
-  <div class="text">Balallalalalalala</div>
+<div class="title">ANOMALIA 3-não existe</div>
+<div class="text"></div>
 </div>
 
 <div class="block">
-  <div class="title">TEST 3</div>
-  <div class="text">Texto editável aqui</div>
+<div class="title">ANOMALIA 4-não existe</div>
+<div class="text"></div>
 </div>
 
 <div class="block">
-  <div class="title">TEST 4</div>
-  <div class="text">Texto editável aqui</div>
+<div class="title">ANOMALIA 5-não existe</div>
+<div class="text"></div>
 </div>
 
 <div class="block">
-  <div class="title">TEST 5</div>
-  <div class="text">Texto editável aqui</div>
+<div class="title">ANOMALIA 6-não existe</div>
+<div class="text"></div>
 </div>
 
 <div class="block">
-  <div class="title">TEST 6</div>
-  <div class="text">Texto editável aqui</div>
+<div class="title">ANOMALIA 7-não existe</div>
+<div class="text"></div>
 </div>
 
 <div class="block">
-  <div class="title">TEST 7</div>
-  <div class="text">Texto editável aqui</div>
+<div class="title">ANOMALIA 8-não existe</div>
+<div class="text"></div>
 </div>
 
 <div class="block">
-  <div class="title">TEST 8</div>
-  <div class="text">Texto editável aqui</div>
+<div class="title">ANOMALIA 9-não existe</div>
+<div class="text"></div>
 </div>
 
 <div class="block">
-  <div class="title">TEST 9</div>
-  <div class="text">Texto editável aqui</div>
+<div class="title">ANOMALIA 10-não existe</div>
+<div class="text"></div>
 </div>
 
-<div class="block">
-  <div class="title">TEST 10</div>
-  <div class="text">Texto editável aqui</div>
 </div>
 
 <div class="footer">
-  CANAL OFICIAL: <br>
-  <a href="https://SEU-LINK-AQUI" target="_blank">
-    https://SEU-LINK-AQUI
-  </a>
+CANAL OFICIAL CNA:<br>
+<span class="small">
+https://SEU-LINK-AQUI
+</span>
 </div>
 
 </body>
