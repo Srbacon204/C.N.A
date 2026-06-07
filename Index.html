@@ -1,154 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>C.N.A - Sistema Interno</title>
+  <meta charset="UTF-8">
+  <title>CNA - TEXT SYSTEM</title>
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0a1a2f;
-    color: white;
-    text-align: center;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background-color: #050914;
+      color: #cfe3ff;
+      padding: 20px;
+    }
 
-header {
-    background: #0d2b52;
-    padding: 20px;
-    border-bottom: 2px solid #1e90ff;
-}
+    h1 {
+      text-align: center;
+      color: #1e90ff;
+      letter-spacing: 3px;
+    }
 
-h1 {
-    margin: 0;
-    letter-spacing: 3px;
-}
+    .block {
+      margin-bottom: 25px;
+      padding: 10px;
+      border-left: 3px solid #1e90ff;
+    }
 
-.container {
-    padding: 30px;
-}
+    .title {
+      font-weight: bold;
+      color: #4aa3ff;
+      margin-bottom: 5px;
+    }
 
-.box {
-    background: #122b4a;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 400px;
-    border: 1px solid #1e90ff;
-    border-radius: 10px;
-}
+    .text {
+      color: #d6e6ff;
+      white-space: pre-wrap;
+    }
 
-input {
-    width: 80%;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-}
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #1e90ff;
+      font-size: 14px;
+    }
 
-button {
-    padding: 10px 20px;
-    background: #1e90ff;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background: #3aa0ff;
-}
-
-.hidden {
-    display: none;
-}
-
-/* Área secreta */
-#arquivo {
-    background: black;
-    color: #00ffcc;
-    font-family: monospace;
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.glitch {
-    animation: glitch 1s infinite;
-}
-
-@keyframes glitch {
-    0% {opacity:1;}
-    50% {opacity:0.5;}
-    100% {opacity:1;}
-}
-</style>
+    a {
+      color: #1e90ff;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-    <h1>CNA</h1>
-    <p>Companhia Neutralizadora de Anomalias</p>
-</header>
+<h1>CNA SYSTEM LOG</h1>
 
-<div class="container">
-
-    <!-- LOGIN -->
-    <div class="box" id="loginBox">
-        <h2>Acesso Restrito</h2>
-        <input type="text" id="user" placeholder="Usuário">
-        <input type="password" id="pass" placeholder="Senha">
-        <br>
-        <button onclick="login()">Entrar</button>
-    </div>
-
-    <!-- PAINEL -->
-    <div class="box hidden" id="painel">
-        <h2>PAINEL INTERNO</h2>
-        <p>Status: <span style="color:lime;">ONLINE</span></p>
-        <p>Último registro: ARQUIVO 213</p>
-        <button onclick="abrirArquivo()">Acessar Arquivo</button>
-    </div>
-
-    <!-- ARQUIVO SECRETO -->
-    <div id="arquivo" class="hidden">
-        <h2 style="color:red;">⚠ ARQUIVO 213 ⚠</h2>
-        <p>Status: CORROMPIDO</p>
-
-        <p class="glitch">
-            "Eu não senti quando começou..."
-        </p>
-
-        <br>
-
-        <p>Registro parcial recuperado:</p>
-
-        <p>
-        O som não vinha da vítima.<br>
-        Nem do suspeito.<br><br>
-        <span style="color:red;">VINHA DA CASA.</span>
-        </p>
-    </div>
-
+<div class="block">
+  <div class="title">TEST 1</div>
+  <div class="text">Bla balalabalaalalalala</div>
 </div>
 
-<script>
-function login() {
-    let user = document.getElementById("user").value;
-    let pass = document.getElementById("pass").value;
+<div class="block">
+  <div class="title">TEST 2</div>
+  <div class="text">Balallalalalalala</div>
+</div>
 
-    if(user === "admin" && pass === "213") {
-        document.getElementById("loginBox").style.display = "none";
-        document.getElementById("painel").style.display = "block";
-    } else {
-        alert("ACESSO NEGADO");
-    }
-}
+<div class="block">
+  <div class="title">TEST 3</div>
+  <div class="text">Texto editável aqui</div>
+</div>
 
-function abrirArquivo() {
-    document.getElementById("arquivo").style.display = "block";
-}
-</script>
+<div class="block">
+  <div class="title">TEST 4</div>
+  <div class="text">Texto editável aqui</div>
+</div>
+
+<div class="block">
+  <div class="title">TEST 5</div>
+  <div class="text">Texto editável aqui</div>
+</div>
+
+<div class="block">
+  <div class="title">TEST 6</div>
+  <div class="text">Texto editável aqui</div>
+</div>
+
+<div class="block">
+  <div class="title">TEST 7</div>
+  <div class="text">Texto editável aqui</div>
+</div>
+
+<div class="block">
+  <div class="title">TEST 8</div>
+  <div class="text">Texto editável aqui</div>
+</div>
+
+<div class="block">
+  <div class="title">TEST 9</div>
+  <div class="text">Texto editável aqui</div>
+</div>
+
+<div class="block">
+  <div class="title">TEST 10</div>
+  <div class="text">Texto editável aqui</div>
+</div>
+
+<div class="footer">
+  CANAL OFICIAL: <br>
+  <a href="https://SEU-LINK-AQUI" target="_blank">
+    https://SEU-LINK-AQUI
+  </a>
+</div>
 
 </body>
-                                         </html>
+</html>
